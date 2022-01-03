@@ -19,11 +19,11 @@ import timber.log.Timber;
 public class GlobalConfiguration implements ConfigModule {
 
     @Override
-    public void applyOptions(Context context, GlobalConfigModule.Builder builder) {
+    public void applyOptions(@NonNull Context context, GlobalConfigModule.Builder builder) {
     }
 
     @Override
-    public void injectAppLifecycle(Context context, List<AppLifecycles> lifecycles) {
+    public void injectAppLifecycle(@NonNull Context context, List<AppLifecycles> lifecycles) {
         lifecycles.add(0, new AppLifecycles() {
 
             @Override
@@ -67,12 +67,12 @@ public class GlobalConfiguration implements ConfigModule {
     }
 
     @Override
-    public void injectActivityLifecycle(Context context,
+    public void injectActivityLifecycle(@NonNull Context context,
                                         List<Application.ActivityLifecycleCallbacks> lifecycles) {
     }
 
     @Override
-    public void injectFragmentLifecycle(Context context,
+    public void injectFragmentLifecycle(@NonNull Context context,
                                         List<FragmentManager.FragmentLifecycleCallbacks> lifecycles) {
     }
 
