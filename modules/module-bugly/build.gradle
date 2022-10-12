@@ -7,10 +7,6 @@ buildProperties {
     }
 }
 
-repositories {
-    maven { url "https://dl.bintray.com/umsdk/release" }
-}
-
 android {
     defaultConfig {
         buildConfigField "String", "BUGLY_ID", buildProperties.app['BUGLY_ID'].string
@@ -26,6 +22,7 @@ android {
                 MTA_CHANNEL: "酷安"
         ]
     }
+    namespace 'com.timecat.component.bugly'
 }
 
 dependencies {
