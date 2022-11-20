@@ -22,6 +22,8 @@ public class MtaServiceImpl implements MtaService {
 
     @Override
     public void startStatService(Context context) {
+        //友盟正式初始化
+        UMConfigure.init(context, "5a669093a40fa335210000fe", "github", UMConfigure.DEVICE_TYPE_PHONE, "96eee0872f33f29193d1d48ecea726f0");
     }
 
     @Override

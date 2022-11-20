@@ -1,6 +1,5 @@
 package com.timecat.component.bugly;
 
-import com.tencent.bugly.beta.Beta;
 import com.timecat.identity.service.BuglyService;
 import com.xiaojinzi.component.anno.ServiceAnno;
 
@@ -16,6 +15,5 @@ public class BuglyServiceImpl implements BuglyService {
 
     @Override
     public void checkUpdate() {
-        Beta.checkUpgrade();
     }
 }
